@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		260DE18F116D2F72E660BFFC /* Pods_HAPIconnectProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DF9E824E201EE21A026E67 /* Pods_HAPIconnectProto.framework */; };
+		C62C088320A3EFAA00F039CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62C088220A3EFAA00F039CB /* AppDelegate.swift */; };
+		C62C088B20A3EFAA00F039CB /* HAPIconnectProto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C62C088920A3EFAA00F039CB /* HAPIconnectProto.xcdatamodeld */; };
+		C62C088D20A3EFAA00F039CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62C088C20A3EFAA00F039CB /* Assets.xcassets */; };
+		C62C08A120A42ACC00F039CB /* blank_profile_image.png in Resources */ = {isa = PBXBuildFile; fileRef = C62C089820A42ACC00F039CB /* blank_profile_image.png */; };
+		C62C08A220A42ACC00F039CB /* blood_pressure.png in Resources */ = {isa = PBXBuildFile; fileRef = C62C089920A42ACC00F039CB /* blood_pressure.png */; };
+		C62C08A320A42ACC00F039CB /* fat_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = C62C089A20A42ACC00F039CB /* fat_scale.png */; };
+		C62C08A420A42ACC00F039CB /* height.png in Resources */ = {isa = PBXBuildFile; fileRef = C62C089B20A42ACC00F039CB /* height.png */; };
+		C62C08A520A42ACC00F039CB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C62C089C20A42ACC00F039CB /* icon.png */; };
+		C62C08A620A42ACC00F039CB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C62C089D20A42ACC00F039CB /* icon@2x.png */; };
+		C62C08A720A42ACC00F039CB /* kitchen_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = C62C089E20A42ACC00F039CB /* kitchen_scale.png */; };
+		C62C08A820A42ACC00F039CB /* pedometer.png in Resources */ = {isa = PBXBuildFile; fileRef = C62C089F20A42ACC00F039CB /* pedometer.png */; };
+		C62C08A920A42ACC00F039CB /* weight_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = C62C08A020A42ACC00F039CB /* weight_scale.png */; };
+		C62C08AC20A42AFD00F039CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62C08AB20A42AFD00F039CB /* Foundation.framework */; };
+		C62C08AE20A42B0500F039CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62C08AD20A42B0500F039CB /* UIKit.framework */; };
+		C62C08B020A42B1100F039CB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62C08AF20A42B1100F039CB /* QuartzCore.framework */; };
+		C62C08B220A42B1B00F039CB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62C08B120A42B1B00F039CB /* CoreData.framework */; };
+		C62C08B420A42B2600F039CB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62C08B320A42B2600F039CB /* CoreBluetooth.framework */; };
+		C62C08B620A42B3B00F039CB /* LifesenseBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62C08B520A42B3B00F039CB /* LifesenseBluetooth.framework */; };
+		C63D0AEA20ABD7ED009BC06B /* ScanResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63D0AE920ABD7ED009BC06B /* ScanResultsTableViewCell.swift */; };
+		C63D0AEC20ABE4DE009BC06B /* WeightSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63D0AEB20ABE4DE009BC06B /* WeightSummaryViewController.swift */; };
+		C63D0AEE20AC06D7009BC06B /* DeviceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63D0AED20AC06D7009BC06B /* DeviceListTableViewCell.swift */; };
+		C63D0AF020AC07AC009BC06B /* WeightSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63D0AEF20AC07AC009BC06B /* WeightSummaryTableViewCell.swift */; };
+		C63D0AF220AC0802009BC06B /* DisplayWeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63D0AF120AC0802009BC06B /* DisplayWeightTableViewCell.swift */; };
+		C63EFB7020AC2CA9008AA23E /* NSArray+LSAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EFB6F20AC2CA9008AA23E /* NSArray+LSAddition.m */; };
+		C64F413520A4305E008573B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64F413120A4305E008573B8 /* LaunchScreen.storyboard */; };
+		C64F413620A4305E008573B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64F413320A4305E008573B8 /* Main.storyboard */; };
+		C64F413C20A431DB008573B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F413B20A431DB008573B8 /* LoginViewController.swift */; };
+		C64F413E20A435D7008573B8 /* WebServiceHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F413D20A435D7008573B8 /* WebServiceHTTPClient.swift */; };
+		C64F414020A43683008573B8 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F413F20A43683008573B8 /* WebServiceManager.swift */; };
+		C64F414220A436DC008573B8 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F414120A436DC008573B8 /* StorageManager.swift */; };
+		C64F414420A43708008573B8 /* JsonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F414320A43708008573B8 /* JsonRequest.swift */; };
+		C64F414620A4371C008573B8 /* JsonHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F414520A4371C008573B8 /* JsonHandler.swift */; };
+		C64F414820A43735008573B8 /* CalendarUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F414720A43735008573B8 /* CalendarUtil.swift */; };
+		C64F414A20A43741008573B8 /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F414920A43741008573B8 /* AppUtil.swift */; };
+		C64F414C20A43767008573B8 /* ContentUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F414B20A43767008573B8 /* ContentUtil.swift */; };
+		C67B823120A5320000DED482 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67B823020A5320000DED482 /* LoginPresenter.swift */; };
+		C67E57E520B4FD84007E2486 /* LSFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C67E57E420B4FD84007E2486 /* LSFormatter.m */; };
+		C68D42D520A52FAC00218DC7 /* HAPIconnectProtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68D42D420A52FAC00218DC7 /* HAPIconnectProtoTests.swift */; };
+		C697043820AD1CFD00FC3DA8 /* AccountEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697043720AD1CFD00FC3DA8 /* AccountEntity.swift */; };
+		C697043A20AD1ED100FC3DA8 /* MemberEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697043920AD1ED100FC3DA8 /* MemberEntity.swift */; };
+		C697043C20AD1FE600FC3DA8 /* AccountObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697043B20AD1FE600FC3DA8 /* AccountObject.swift */; };
+		C697043E20AD1FF300FC3DA8 /* MemberObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697043D20AD1FF300FC3DA8 /* MemberObject.swift */; };
+		C697044020AD50ED00FC3DA8 /* DeviceBindingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697043F20AD50ED00FC3DA8 /* DeviceBindingEntity.swift */; };
+		C697044220AD510D00FC3DA8 /* DeviceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697044120AD510D00FC3DA8 /* DeviceEntity.swift */; };
+		C697044420AD522000FC3DA8 /* DeviceBindingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697044320AD522000FC3DA8 /* DeviceBindingObject.swift */; };
+		C697044620AD523000FC3DA8 /* DeviceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697044520AD523000FC3DA8 /* DeviceObject.swift */; };
+		C697044820AD71E900FC3DA8 /* WeightRecordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697044720AD71E900FC3DA8 /* WeightRecordEntity.swift */; };
+		C697044A20AD72F000FC3DA8 /* WeightRecordObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697044920AD72F000FC3DA8 /* WeightRecordObject.swift */; };
+		C6F3681820AA7B2300437A24 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F3681720AA7B2300437A24 /* AccountViewController.swift */; };
+		C6F3681A20AA885800437A24 /* AvailableDevicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F3681920AA885800437A24 /* AvailableDevicesTableViewCell.swift */; };
+		C6F3681C20AA8F0900437A24 /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F3681B20AA8F0900437A24 /* DeviceListViewController.swift */; };
+		C6F3682020AA8F8300437A24 /* SearchDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F3681F20AA8F8300437A24 /* SearchDeviceViewController.swift */; };
+		C6F3682320AA907B00437A24 /* WeightHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F3682220AA907B00437A24 /* WeightHistoryViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C68D42D720A52FAC00218DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C62C087720A3EFAA00F039CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C62C087E20A3EFAA00F039CB;
+			remoteInfo = HAPIconnectProto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05DF9E824E201EE21A026E67 /* Pods_HAPIconnectProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAPIconnectProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F573410ED84E277BC9C55A /* Pods-HAPIconnectProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPIconnectProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HAPIconnectProto/Pods-HAPIconnectProto.debug.xcconfig"; sourceTree = "<group>"; };
+		B4EAF3B4218354B0B54C0BBD /* Pods-HAPIconnectProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAPIconnectProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-HAPIconnectProto/Pods-HAPIconnectProto.release.xcconfig"; sourceTree = "<group>"; };
+		C62C087F20A3EFAA00F039CB /* HAPIconnectProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HAPIconnectProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62C088220A3EFAA00F039CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C62C088A20A3EFAA00F039CB /* HAPIconnectProto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HAPIconnectProto.xcdatamodel; sourceTree = "<group>"; };
+		C62C088C20A3EFAA00F039CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C62C089120A3EFAA00F039CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62C089820A42ACC00F039CB /* blank_profile_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank_profile_image.png; sourceTree = "<group>"; };
+		C62C089920A42ACC00F039CB /* blood_pressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blood_pressure.png; sourceTree = "<group>"; };
+		C62C089A20A42ACC00F039CB /* fat_scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fat_scale.png; sourceTree = "<group>"; };
+		C62C089B20A42ACC00F039CB /* height.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = height.png; sourceTree = "<group>"; };
+		C62C089C20A42ACC00F039CB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		C62C089D20A42ACC00F039CB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		C62C089E20A42ACC00F039CB /* kitchen_scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kitchen_scale.png; sourceTree = "<group>"; };
+		C62C089F20A42ACC00F039CB /* pedometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pedometer.png; sourceTree = "<group>"; };
+		C62C08A020A42ACC00F039CB /* weight_scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weight_scale.png; sourceTree = "<group>"; };
+		C62C08AB20A42AFD00F039CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C62C08AD20A42B0500F039CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C62C08AF20A42B1100F039CB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C62C08B120A42B1B00F039CB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C62C08B320A42B2600F039CB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C62C08B520A42B3B00F039CB /* LifesenseBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LifesenseBluetooth.framework; path = HAPIconnectProto/LifesenseBluetooth.framework; sourceTree = "<group>"; };
+		C63D0AE920ABD7ED009BC06B /* ScanResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultsTableViewCell.swift; sourceTree = "<group>"; };
+		C63D0AEB20ABE4DE009BC06B /* WeightSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSummaryViewController.swift; sourceTree = "<group>"; };
+		C63D0AED20AC06D7009BC06B /* DeviceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListTableViewCell.swift; sourceTree = "<group>"; };
+		C63D0AEF20AC07AC009BC06B /* WeightSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		C63D0AF120AC0802009BC06B /* DisplayWeightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayWeightTableViewCell.swift; sourceTree = "<group>"; };
+		C63EFB6E20AC2CA9008AA23E /* NSArray+LSAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LSAddition.h"; sourceTree = "<group>"; };
+		C63EFB6F20AC2CA9008AA23E /* NSArray+LSAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LSAddition.m"; sourceTree = "<group>"; };
+		C64F413220A4305E008573B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HAPIconnectProto/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		C64F413420A4305E008573B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HAPIconnectProto/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		C64F413B20A431DB008573B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C64F413D20A435D7008573B8 /* WebServiceHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceHTTPClient.swift; sourceTree = "<group>"; };
+		C64F413F20A43683008573B8 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		C64F414120A436DC008573B8 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		C64F414320A43708008573B8 /* JsonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonRequest.swift; sourceTree = "<group>"; };
+		C64F414520A4371C008573B8 /* JsonHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHandler.swift; sourceTree = "<group>"; };
+		C64F414720A43735008573B8 /* CalendarUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUtil.swift; sourceTree = "<group>"; };
+		C64F414920A43741008573B8 /* AppUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
+		C64F414B20A43767008573B8 /* ContentUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentUtil.swift; sourceTree = "<group>"; };
+		C67B823020A5320000DED482 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		C67B823220A5387700DED482 /* HAPIconnectProto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HAPIconnectProto-Bridging-Header.h"; sourceTree = "<group>"; };
+		C67E57E320B4FD84007E2486 /* LSFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFormatter.h; sourceTree = "<group>"; };
+		C67E57E420B4FD84007E2486 /* LSFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSFormatter.m; sourceTree = "<group>"; };
+		C68D42D220A52FAB00218DC7 /* HAPIconnectProtoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HAPIconnectProtoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C68D42D420A52FAC00218DC7 /* HAPIconnectProtoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPIconnectProtoTests.swift; sourceTree = "<group>"; };
+		C68D42D620A52FAC00218DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C697043720AD1CFD00FC3DA8 /* AccountEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountEntity.swift; sourceTree = "<group>"; };
+		C697043920AD1ED100FC3DA8 /* MemberEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberEntity.swift; sourceTree = "<group>"; };
+		C697043B20AD1FE600FC3DA8 /* AccountObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountObject.swift; sourceTree = "<group>"; };
+		C697043D20AD1FF300FC3DA8 /* MemberObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberObject.swift; sourceTree = "<group>"; };
+		C697043F20AD50ED00FC3DA8 /* DeviceBindingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBindingEntity.swift; sourceTree = "<group>"; };
+		C697044120AD510D00FC3DA8 /* DeviceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceEntity.swift; sourceTree = "<group>"; };
+		C697044320AD522000FC3DA8 /* DeviceBindingObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBindingObject.swift; sourceTree = "<group>"; };
+		C697044520AD523000FC3DA8 /* DeviceObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceObject.swift; sourceTree = "<group>"; };
+		C697044720AD71E900FC3DA8 /* WeightRecordEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightRecordEntity.swift; sourceTree = "<group>"; };
+		C697044920AD72F000FC3DA8 /* WeightRecordObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightRecordObject.swift; sourceTree = "<group>"; };
+		C6F3681720AA7B2300437A24 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		C6F3681920AA885800437A24 /* AvailableDevicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableDevicesTableViewCell.swift; sourceTree = "<group>"; };
+		C6F3681B20AA8F0900437A24 /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
+		C6F3681F20AA8F8300437A24 /* SearchDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDeviceViewController.swift; sourceTree = "<group>"; };
+		C6F3682220AA907B00437A24 /* WeightHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightHistoryViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C62C087C20A3EFAA00F039CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62C08B420A42B2600F039CB /* CoreBluetooth.framework in Frameworks */,
+				C62C08B220A42B1B00F039CB /* CoreData.framework in Frameworks */,
+				C62C08B620A42B3B00F039CB /* LifesenseBluetooth.framework in Frameworks */,
+				C62C08B020A42B1100F039CB /* QuartzCore.framework in Frameworks */,
+				C62C08AE20A42B0500F039CB /* UIKit.framework in Frameworks */,
+				C62C08AC20A42AFD00F039CB /* Foundation.framework in Frameworks */,
+				260DE18F116D2F72E660BFFC /* Pods_HAPIconnectProto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C68D42CF20A52FAB00218DC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C62C087620A3EFAA00F039CB = {
+			isa = PBXGroup;
+			children = (
+				C62C088120A3EFAA00F039CB /* HAPIconnectProto */,
+				C62C088020A3EFAA00F039CB /* Products */,
+				C62C08AA20A42AFD00F039CB /* Frameworks */,
+				EEE7C265048A75951EA2E148 /* Pods */,
+				C68D42D320A52FAB00218DC7 /* HAPIconnectProtoTests */,
+			);
+			sourceTree = "<group>";
+		};
+		C62C088020A3EFAA00F039CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C62C087F20A3EFAA00F039CB /* HAPIconnectProto.app */,
+				C68D42D220A52FAB00218DC7 /* HAPIconnectProtoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C62C088120A3EFAA00F039CB /* HAPIconnectProto */ = {
+			isa = PBXGroup;
+			children = (
+				C62C088220A3EFAA00F039CB /* AppDelegate.swift */,
+				C62C088C20A3EFAA00F039CB /* Assets.xcassets */,
+				C62C089120A3EFAA00F039CB /* Info.plist */,
+				C64F413720A43127008573B8 /* Model */,
+				C64F412E20A4302B008573B8 /* View */,
+				C64F412B20A4302B008573B8 /* ViewModel */,
+				C64F412C20A4302B008573B8 /* Controller */,
+				C62C089720A42ACC00F039CB /* Resources */,
+			);
+			path = HAPIconnectProto;
+			sourceTree = "<group>";
+		};
+		C62C089720A42ACC00F039CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C62C089820A42ACC00F039CB /* blank_profile_image.png */,
+				C62C089920A42ACC00F039CB /* blood_pressure.png */,
+				C62C089A20A42ACC00F039CB /* fat_scale.png */,
+				C62C089B20A42ACC00F039CB /* height.png */,
+				C62C089C20A42ACC00F039CB /* icon.png */,
+				C62C089D20A42ACC00F039CB /* icon@2x.png */,
+				C62C089E20A42ACC00F039CB /* kitchen_scale.png */,
+				C62C089F20A42ACC00F039CB /* pedometer.png */,
+				C62C08A020A42ACC00F039CB /* weight_scale.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C62C08AA20A42AFD00F039CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C62C08B520A42B3B00F039CB /* LifesenseBluetooth.framework */,
+				C62C08B320A42B2600F039CB /* CoreBluetooth.framework */,
+				C62C08B120A42B1B00F039CB /* CoreData.framework */,
+				C62C08AF20A42B1100F039CB /* QuartzCore.framework */,
+				C62C08AD20A42B0500F039CB /* UIKit.framework */,
+				C62C08AB20A42AFD00F039CB /* Foundation.framework */,
+				05DF9E824E201EE21A026E67 /* Pods_HAPIconnectProto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C63EFB6D20AC2CA9008AA23E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C63EFB6E20AC2CA9008AA23E /* NSArray+LSAddition.h */,
+				C63EFB6F20AC2CA9008AA23E /* NSArray+LSAddition.m */,
+				C67E57E320B4FD84007E2486 /* LSFormatter.h */,
+				C67E57E420B4FD84007E2486 /* LSFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C64F412B20A4302B008573B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C64F414D20A43786008573B8 /* Cells */,
+				C64F413A20A431C0008573B8 /* Login */,
+				C6F3681620AA7AD600437A24 /* Account */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C64F412C20A4302B008573B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C64F414920A43741008573B8 /* AppUtil.swift */,
+				C64F414720A43735008573B8 /* CalendarUtil.swift */,
+				C64F414B20A43767008573B8 /* ContentUtil.swift */,
+				C64F414520A4371C008573B8 /* JsonHandler.swift */,
+				C64F414320A43708008573B8 /* JsonRequest.swift */,
+				C64F414120A436DC008573B8 /* StorageManager.swift */,
+				C64F413D20A435D7008573B8 /* WebServiceHTTPClient.swift */,
+				C64F413F20A43683008573B8 /* WebServiceManager.swift */,
+				C67B823220A5387700DED482 /* HAPIconnectProto-Bridging-Header.h */,
+				C63EFB6D20AC2CA9008AA23E /* Extensions */,
+				C67B823020A5320000DED482 /* LoginPresenter.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C64F412E20A4302B008573B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C64F413120A4305E008573B8 /* LaunchScreen.storyboard */,
+				C64F413320A4305E008573B8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C64F413720A43127008573B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C62C088920A3EFAA00F039CB /* HAPIconnectProto.xcdatamodeld */,
+				C64F413820A4319F008573B8 /* Entity */,
+				C64F413920A4319F008573B8 /* Object */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C64F413820A4319F008573B8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C697043720AD1CFD00FC3DA8 /* AccountEntity.swift */,
+				C697043920AD1ED100FC3DA8 /* MemberEntity.swift */,
+				C697043F20AD50ED00FC3DA8 /* DeviceBindingEntity.swift */,
+				C697044120AD510D00FC3DA8 /* DeviceEntity.swift */,
+				C697044720AD71E900FC3DA8 /* WeightRecordEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C64F413920A4319F008573B8 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				C697043B20AD1FE600FC3DA8 /* AccountObject.swift */,
+				C697043D20AD1FF300FC3DA8 /* MemberObject.swift */,
+				C697044320AD522000FC3DA8 /* DeviceBindingObject.swift */,
+				C697044520AD523000FC3DA8 /* DeviceObject.swift */,
+				C697044920AD72F000FC3DA8 /* WeightRecordObject.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		C64F413A20A431C0008573B8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C64F413B20A431DB008573B8 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C64F414D20A43786008573B8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C6F3681920AA885800437A24 /* AvailableDevicesTableViewCell.swift */,
+				C63D0AE920ABD7ED009BC06B /* ScanResultsTableViewCell.swift */,
+				C63D0AED20AC06D7009BC06B /* DeviceListTableViewCell.swift */,
+				C63D0AEF20AC07AC009BC06B /* WeightSummaryTableViewCell.swift */,
+				C63D0AF120AC0802009BC06B /* DisplayWeightTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C68D42D320A52FAB00218DC7 /* HAPIconnectProtoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C68D42D420A52FAC00218DC7 /* HAPIconnectProtoTests.swift */,
+				C68D42D620A52FAC00218DC7 /* Info.plist */,
+			);
+			path = HAPIconnectProtoTests;
+			sourceTree = "<group>";
+		};
+		C6F3681620AA7AD600437A24 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				C6F3681720AA7B2300437A24 /* AccountViewController.swift */,
+				C6F3681B20AA8F0900437A24 /* DeviceListViewController.swift */,
+				C6F3681F20AA8F8300437A24 /* SearchDeviceViewController.swift */,
+				C6F3682420AA915600437A24 /* Blood Pressure */,
+				C6F3682520AA915600437A24 /* Steps */,
+				C6F3682120AA905A00437A24 /* Weight */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		C6F3682120AA905A00437A24 /* Weight */ = {
+			isa = PBXGroup;
+			children = (
+				C6F3682220AA907B00437A24 /* WeightHistoryViewController.swift */,
+				C63D0AEB20ABE4DE009BC06B /* WeightSummaryViewController.swift */,
+			);
+			path = Weight;
+			sourceTree = "<group>";
+		};
+		C6F3682420AA915600437A24 /* Blood Pressure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Blood Pressure";
+			sourceTree = "<group>";
+		};
+		C6F3682520AA915600437A24 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		EEE7C265048A75951EA2E148 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68F573410ED84E277BC9C55A /* Pods-HAPIconnectProto.debug.xcconfig */,
+				B4EAF3B4218354B0B54C0BBD /* Pods-HAPIconnectProto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C62C087E20A3EFAA00F039CB /* HAPIconnectProto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62C089420A3EFAA00F039CB /* Build configuration list for PBXNativeTarget "HAPIconnectProto" */;
+			buildPhases = (
+				5EC8DB388A4F46A10EBF9C3D /* [CP] Check Pods Manifest.lock */,
+				C62C087B20A3EFAA00F039CB /* Sources */,
+				C62C087C20A3EFAA00F039CB /* Frameworks */,
+				C62C087D20A3EFAA00F039CB /* Resources */,
+				7EAF2232C3D17C705BE7C5EA /* [CP] Embed Pods Frameworks */,
+				750141FE784E258DA857D59F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HAPIconnectProto;
+			productName = HAPIconnectProto;
+			productReference = C62C087F20A3EFAA00F039CB /* HAPIconnectProto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C68D42D120A52FAB00218DC7 /* HAPIconnectProtoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C68D42D920A52FAC00218DC7 /* Build configuration list for PBXNativeTarget "HAPIconnectProtoTests" */;
+			buildPhases = (
+				C68D42CE20A52FAB00218DC7 /* Sources */,
+				C68D42CF20A52FAB00218DC7 /* Frameworks */,
+				C68D42D020A52FAB00218DC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C68D42D820A52FAC00218DC7 /* PBXTargetDependency */,
+			);
+			name = HAPIconnectProtoTests;
+			productName = HAPIconnectProtoTests;
+			productReference = C68D42D220A52FAB00218DC7 /* HAPIconnectProtoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C62C087720A3EFAA00F039CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Anxa Europe Limited";
+				TargetAttributes = {
+					C62C087E20A3EFAA00F039CB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C68D42D120A52FAB00218DC7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C62C087E20A3EFAA00F039CB;
+					};
+				};
+			};
+			buildConfigurationList = C62C087A20A3EFAA00F039CB /* Build configuration list for PBXProject "HAPIconnectProto" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C62C087620A3EFAA00F039CB;
+			productRefGroup = C62C088020A3EFAA00F039CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C62C087E20A3EFAA00F039CB /* HAPIconnectProto */,
+				C68D42D120A52FAB00218DC7 /* HAPIconnectProtoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C62C087D20A3EFAA00F039CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62C08A120A42ACC00F039CB /* blank_profile_image.png in Resources */,
+				C62C08A720A42ACC00F039CB /* kitchen_scale.png in Resources */,
+				C62C08A820A42ACC00F039CB /* pedometer.png in Resources */,
+				C64F413620A4305E008573B8 /* Main.storyboard in Resources */,
+				C62C08A420A42ACC00F039CB /* height.png in Resources */,
+				C62C08A320A42ACC00F039CB /* fat_scale.png in Resources */,
+				C62C08A920A42ACC00F039CB /* weight_scale.png in Resources */,
+				C62C08A520A42ACC00F039CB /* icon.png in Resources */,
+				C62C088D20A3EFAA00F039CB /* Assets.xcassets in Resources */,
+				C62C08A220A42ACC00F039CB /* blood_pressure.png in Resources */,
+				C64F413520A4305E008573B8 /* LaunchScreen.storyboard in Resources */,
+				C62C08A620A42ACC00F039CB /* icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C68D42D020A52FAB00218DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EC8DB388A4F46A10EBF9C3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HAPIconnectProto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		750141FE784E258DA857D59F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HAPIconnectProto/Pods-HAPIconnectProto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EAF2232C3D17C705BE7C5EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HAPIconnectProto/Pods-HAPIconnectProto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HAPIconnectProto/Pods-HAPIconnectProto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C62C087B20A3EFAA00F039CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C67B823120A5320000DED482 /* LoginPresenter.swift in Sources */,
+				C63D0AF020AC07AC009BC06B /* WeightSummaryTableViewCell.swift in Sources */,
+				C64F414020A43683008573B8 /* WebServiceManager.swift in Sources */,
+				C6F3682020AA8F8300437A24 /* SearchDeviceViewController.swift in Sources */,
+				C63D0AEC20ABE4DE009BC06B /* WeightSummaryViewController.swift in Sources */,
+				C6F3681820AA7B2300437A24 /* AccountViewController.swift in Sources */,
+				C64F413C20A431DB008573B8 /* LoginViewController.swift in Sources */,
+				C62C088B20A3EFAA00F039CB /* HAPIconnectProto.xcdatamodeld in Sources */,
+				C697043820AD1CFD00FC3DA8 /* AccountEntity.swift in Sources */,
+				C64F414A20A43741008573B8 /* AppUtil.swift in Sources */,
+				C697044420AD522000FC3DA8 /* DeviceBindingObject.swift in Sources */,
+				C697043C20AD1FE600FC3DA8 /* AccountObject.swift in Sources */,
+				C697043E20AD1FF300FC3DA8 /* MemberObject.swift in Sources */,
+				C67E57E520B4FD84007E2486 /* LSFormatter.m in Sources */,
+				C63EFB7020AC2CA9008AA23E /* NSArray+LSAddition.m in Sources */,
+				C64F414220A436DC008573B8 /* StorageManager.swift in Sources */,
+				C64F414C20A43767008573B8 /* ContentUtil.swift in Sources */,
+				C64F414620A4371C008573B8 /* JsonHandler.swift in Sources */,
+				C63D0AF220AC0802009BC06B /* DisplayWeightTableViewCell.swift in Sources */,
+				C62C088320A3EFAA00F039CB /* AppDelegate.swift in Sources */,
+				C697043A20AD1ED100FC3DA8 /* MemberEntity.swift in Sources */,
+				C697044620AD523000FC3DA8 /* DeviceObject.swift in Sources */,
+				C64F413E20A435D7008573B8 /* WebServiceHTTPClient.swift in Sources */,
+				C6F3682320AA907B00437A24 /* WeightHistoryViewController.swift in Sources */,
+				C697044820AD71E900FC3DA8 /* WeightRecordEntity.swift in Sources */,
+				C6F3681C20AA8F0900437A24 /* DeviceListViewController.swift in Sources */,
+				C63D0AEE20AC06D7009BC06B /* DeviceListTableViewCell.swift in Sources */,
+				C6F3681A20AA885800437A24 /* AvailableDevicesTableViewCell.swift in Sources */,
+				C697044020AD50ED00FC3DA8 /* DeviceBindingEntity.swift in Sources */,
+				C697044220AD510D00FC3DA8 /* DeviceEntity.swift in Sources */,
+				C64F414420A43708008573B8 /* JsonRequest.swift in Sources */,
+				C64F414820A43735008573B8 /* CalendarUtil.swift in Sources */,
+				C697044A20AD72F000FC3DA8 /* WeightRecordObject.swift in Sources */,
+				C63D0AEA20ABD7ED009BC06B /* ScanResultsTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C68D42CE20A52FAB00218DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C68D42D520A52FAC00218DC7 /* HAPIconnectProtoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C68D42D820A52FAC00218DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C62C087E20A3EFAA00F039CB /* HAPIconnectProto */;
+			targetProxy = C68D42D720A52FAC00218DC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C64F413120A4305E008573B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C64F413220A4305E008573B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C64F413320A4305E008573B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C64F413420A4305E008573B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C62C089220A3EFAA00F039CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C62C089320A3EFAA00F039CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C62C089520A3EFAA00F039CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F573410ED84E277BC9C55A /* Pods-HAPIconnectProto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YXJXL374U;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HAPIconnectProto",
+				);
+				INFOPLIST_FILE = HAPIconnectProto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"$(inherited)",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hapilabs.proto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HAPIconnectProto/Controller/HAPIconnectProto-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C62C089620A3EFAA00F039CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4EAF3B4218354B0B54C0BBD /* Pods-HAPIconnectProto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YXJXL374U;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HAPIconnectProto",
+				);
+				INFOPLIST_FILE = HAPIconnectProto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"$(inherited)",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hapilabs.proto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HAPIconnectProto/Controller/HAPIconnectProto-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C68D42DA20A52FAC00218DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YXJXL374U;
+				INFOPLIST_FILE = HAPIconnectProtoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hapilabs.proto.HAPIconnectProtoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HAPIconnectProto.app/HAPIconnectProto";
+			};
+			name = Debug;
+		};
+		C68D42DB20A52FAC00218DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YXJXL374U;
+				INFOPLIST_FILE = HAPIconnectProtoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hapilabs.proto.HAPIconnectProtoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HAPIconnectProto.app/HAPIconnectProto";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C62C087A20A3EFAA00F039CB /* Build configuration list for PBXProject "HAPIconnectProto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62C089220A3EFAA00F039CB /* Debug */,
+				C62C089320A3EFAA00F039CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C62C089420A3EFAA00F039CB /* Build configuration list for PBXNativeTarget "HAPIconnectProto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62C089520A3EFAA00F039CB /* Debug */,
+				C62C089620A3EFAA00F039CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C68D42D920A52FAC00218DC7 /* Build configuration list for PBXNativeTarget "HAPIconnectProtoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C68D42DA20A52FAC00218DC7 /* Debug */,
+				C68D42DB20A52FAC00218DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C62C088920A3EFAA00F039CB /* HAPIconnectProto.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C62C088A20A3EFAA00F039CB /* HAPIconnectProto.xcdatamodel */,
+			);
+			currentVersion = C62C088A20A3EFAA00F039CB /* HAPIconnectProto.xcdatamodel */;
+			path = HAPIconnectProto.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C62C087720A3EFAA00F039CB /* Project object */;
+}

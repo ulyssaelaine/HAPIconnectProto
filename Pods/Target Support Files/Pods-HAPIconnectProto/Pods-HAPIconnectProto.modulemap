@@ -1,0 +1,6 @@
+framework module Pods_HAPIconnectProto {
+  umbrella header "Pods-HAPIconnectProto-umbrella.h"
+
+  export *
+  module * { export * }
+}
