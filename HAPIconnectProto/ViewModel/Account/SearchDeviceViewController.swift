@@ -325,6 +325,14 @@ extension SearchDeviceViewController : LSBlePairingDelegate
                 }
                 else
                 {
+                    /* Device Already Exists */
+                    
+                    let deviceBindingObj : DeviceBindingObject = StorageManager.sharedInstance.getDeviceBindingByDeviceID(deviceID: lsDevice.deviceId)
+                    
+                    deviceBindingObj.broadcast = lsDevice.broadcastId
+                    
+                    StorageManager.sharedInstance.updateObject(obj: deviceBindingObj)
+                    
                     self.pairingFailedAlert("Echec", message: "L'association de l'appareil a échoué", protocolType: "A2")
                 }
             }
@@ -360,6 +368,14 @@ extension SearchDeviceViewController : LSBlePairingDelegate
                 }
                 else
                 {
+                    /* Device Already Exists */
+                    
+                    let deviceBindingObj : DeviceBindingObject = StorageManager.sharedInstance.getDeviceBindingByDeviceID(deviceID: lsDevice.deviceId)
+                    
+                    deviceBindingObj.broadcast = lsDevice.broadcastId
+                    
+                    StorageManager.sharedInstance.updateObject(obj: deviceBindingObj)
+                    
                     self.pairingFailedAlert("Echec", message: "L'association de l'appareil a échoué", protocolType: "A3")
                 }
             }
@@ -391,6 +407,14 @@ extension SearchDeviceViewController : LSBlePairingDelegate
                 }
                 else
                 {
+                    /* Device Already Exists */
+                    
+                    let deviceBindingObj : DeviceBindingObject = StorageManager.sharedInstance.getDeviceBindingByDeviceID(deviceID: lsDevice.deviceId)
+                    
+                    deviceBindingObj.broadcast = lsDevice.broadcastId
+                    
+                    StorageManager.sharedInstance.updateObject(obj: deviceBindingObj)
+                    
                     self.pairingFailedAlert("Echec", message: "L'association de l'appareil a échoué", protocolType: "A2")
                 }
             }

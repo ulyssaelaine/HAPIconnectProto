@@ -72,7 +72,12 @@ class DeviceListViewController: UITableViewController
         
         /* Start Data Receive */
         
-        self.startDataReceive()
+        DispatchQueue.global(qos: .default).async(execute: {
+            //Background Thread
+            DispatchQueue.main.async(execute: {
+                self.bleManager.startDataReceiveService(self)
+            })
+        })
     }
     
     override func viewDidDisappear(_ animated: Bool)
